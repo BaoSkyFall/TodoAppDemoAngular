@@ -1,0 +1,6 @@
+<div *ngIf="taskComponent">
+    <i *ngIf="taskComponent.complete" (click)="changeComplete()" class="fa fa-check-square text-success"></i>
+    <i *ngIf="!taskComponent.complete" (click)="changeComplete()"  class="fa fa-square-full"></i>
+    <span class="ml-2">{{taskComponent.description}}</span>
+
+</div>
